@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="RegressionTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.obsqura.scripts.TestClass">
+        <methods>
+          <include name="verify_searchbutton_with_ValidClientNameandId"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLogout_inCarolThomasButton"/>
+          <include name="verify_user_can_search_ValidWorker"/>
+        </methods>
+      </class> <!-- com.obsqura.scripts.TestClass -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+  <test thread-count="2" parallel="tests" name="SanityTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.obsqura.scripts.TestClass">
+        <methods>
+          <include name="verifyLogin_with_no_username_and_password"/>
+          <include name="verify_User_can_CreateNew_Client_with_mandatory_fields"/>
+          <include name="verifyDashBoardButton"/>
+          <include name="verify_searchbutton_with_ValidClientNameandId"/>
+          <include name="setUp"/>
+          <include name="verifyworkerBankDetailsButton"/>
+          <include name="tearDown"/>
+          <include name="verifyLogout_inCarolThomasButton"/>
+          <include name="verify_user_able_to_CreateNewWorker_with_mandatoryFields"/>
+        </methods>
+      </class> <!-- com.obsqura.scripts.TestClass -->
+    </classes>
+  </test> <!-- SanityTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
